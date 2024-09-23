@@ -212,7 +212,7 @@ fn main() {
     if cfg!(debug_assertions) || cfg!(feature = "force-debug") {
         // debug builds are too slow to even remotely be usable,
         // so we build with optimizations even in debug mode
-        // config.define("CMAKE_BUILD_TYPE", "RelWithDebInfo");
+        config.define("CMAKE_BUILD_TYPE", "RelWithDebInfo");
         // config.cxxflag("-DWHISPER_DEBUG");
     }
 
